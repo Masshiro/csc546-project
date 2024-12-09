@@ -13,6 +13,7 @@ RUN ln -fs /usr/share/zoneinfo/America/Vancouver /etc/localtime && \
     curl \
     mahimahi \
     tzdata \
+    iputils-ping \
     && rm -rf /var/lib/apt/lists/*
 
 # install iptables-legacy and conntrack

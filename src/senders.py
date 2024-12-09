@@ -26,6 +26,9 @@ class Sender(object):
 
         self.strategy = strategy
 
+        bind_ip, bind_port = self.sock.getsockname()
+        print(f"Sender: Socket is bound to IP: {bind_ip}, Port: {bind_port}")
+
     def send(self) -> None:
         next_segment =  self.strategy.next_packet_to_send()
         if next_segment is not None:
