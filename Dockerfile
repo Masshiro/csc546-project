@@ -20,6 +20,10 @@ RUN apt-get update && apt-get install -y iptables conntrack && \
 update-alternatives --set iptables /usr/sbin/iptables-legacy && \
 update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 
+RUN useradd -ms /bin/bash ccuser
+USER ccuser
+WORKDIR /home/ccuser
+
 # set working directory
 WORKDIR /app
 
