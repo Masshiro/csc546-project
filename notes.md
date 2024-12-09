@@ -108,6 +108,10 @@
 - `high_water_mark`：已成功接收的最大序列号，用于检测新数据包
 
 
+---
+
+# WSL中无法使用mahimahi
+[可能的解决方案：更换WSL内核](https://unix.stackexchange.com/questions/700620/run-wireguard-as-a-client-on-win10-with-wsl2)
 
 
 
